@@ -3,7 +3,7 @@
 
 # Key Features
 
-Recruitment and Staffing Outsourcing
+Recruitment and Staffing Outsourcing<br>
 IT Services and Consulting
 Payroll and Compliance Solutions
 Campus Placement Programs
