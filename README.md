@@ -4,9 +4,9 @@
 # Key Features
 
 Recruitment and Staffing Outsourcing<br>
-IT Services and Consulting
-Payroll and Compliance Solutions
-Campus Placement Programs
+IT Services and Consulting<br>
+Payroll and Compliance Solutions<br>
+Campus Placement Programs<br>
 Responsive Design and Modern UI
 
 
