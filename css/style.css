@@ -184,19 +184,13 @@ h6,
 /*** Hero Header ***/
 .hero-header {
     background:
-        url(../img/bg-dot.png),
-        url(../img/bg-dot.png),
-        url(../img/bg-round.png),
-        url(../img/bg-tree.png),
-        url(../img/bg-bottom-hero.png);
-    background-position:
-        10px 10px,
-        bottom 190px right 10px,
-        left 55% top -1px,
-        left 45% bottom -1px,
-        center bottom -1px;
-    background-repeat: no-repeat;
+        url(../img/bg-dot.png) 10px 10px no-repeat,
+        url(../img/bg-dot.png) bottom 190px right 10px no-repeat,
+        url(../img/bg-round.png) left 55% top -1px no-repeat,
+        url(../img/bg-tree.png) left 45% bottom -1px no-repeat,
+        url(../img/bg-bottom-hero.png) center bottom -1px / 100% no-repeat;
 }
+
 
 
 /*** Section Title ***/
