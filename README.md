@@ -12,7 +12,7 @@ Responsive Design and Modern UI
 
 # My Website
 
-[https://sumanx16.github.io/makevision-business-site/index.html](https://joyful-cascaron-36d672.netlify.app/)
+[https://sumanx16.github.io/makevision-business-site/index.html](https://sumanx16.github.io/makevision-business-site/index.html)
 
 # Output
 
