@@ -1,13 +1,7 @@
 # makevision-business-site
 "MakeVision Technologies Website"  This repository contains the source code for MakeVision Technologies website, showcasing our comprehensive HR services, IT solutions, and business consulting. The website features sections for Recruitment and Staffing Outsourcing, Payroll Services, Campus Placements, and more. Built with HTML, CSS, and JavaScript, it offers a user-friendly interface and seamless navigation.
 
-# Key Features
 
-Recruitment and Staffing Outsourcing<br>
-IT Services and Consulting<br>
-Payroll and Compliance Solutions<br>
-Campus Placement Programs<br>
-Responsive Design and Modern UI
 
 
 # My Website
