@@ -517,3 +517,67 @@ h6,
     padding-right: 0;
     border-right: none;
 }
+
+.expect-card {
+    background: #fff;
+    color: #175b98;
+    transition: background 0.3s, color 0.3s;
+    border-radius: 1rem;
+    box-shadow: 0 0.5rem 1.5rem rgba(23,91,152,0.07);
+}
+.expect-card i {
+    transition: color 0.3s;
+}
+.expect-card:hover {
+    background: #175b98;
+    color: #fff;
+}
+.expect-card:hover i {
+    color: #fff !important;
+}
+.expect-card h5 {
+    transition: color 0.3s;
+}
+.expect-card:hover h5 {
+    color: #fff;
+}
+
+.why-choose-box {
+    background: #fff;
+    color: #175b98;
+    border-radius: 1rem;
+    box-shadow: 0 0.5rem 1.5rem rgba(23, 91, 152, 0.07);
+    padding: 2rem 1.5rem;
+    text-align: center;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    cursor: pointer;
+}
+
+.why-choose-box i {
+    font-size: 48px;
+    color: #1976d2;
+    transition: color 0.3s ease;
+    margin-bottom: 1rem;
+}
+
+.why-choose-box h5 {
+    font-weight: 700;
+    margin-bottom: 0.75rem;
+    transition: color 0.3s ease;
+}
+
+.why-choose-box p {
+    margin-bottom: 0;
+    font-size: 1rem;
+    line-height: 1.4;
+}
+
+.why-choose-box:hover {
+    background-color: #175b98;
+    color: #fff;
+}
+
+.why-choose-box:hover i,
+.why-choose-box:hover h5 {
+    color: #fff;
+}
