@@ -25,5 +25,3 @@ Responsive Design and Modern UI
 ![Screenshot 2024-06-28 221707](https://github.com/VIB3SFR0MEYES/makevision-business-site/assets/161857968/9179da1b-6b98-4e88-9886-9870a8e84726)
 
                            "Empowering businesses with innovative HR solutions and expert consulting."
-###
-S
