@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Services | Make Visions</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/LOGO.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet"> 
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+<style>
+    body {
+        /* Use your preferred image below, you can replace Unsplash link with 'img/bg-yourimage.jpg' */
+        background: linear-gradient(rgba(23,91,152,0.55), rgba(33,36,177,0.28)), 
+                    url('https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=1350&q=80') no-repeat center center fixed;
+        background-size: cover;
+        min-height: 100vh;
+        animation: fadeInBg 1.3s cubic-bezier(.4,0,.2,1);
+    }
+    @keyframes fadeInBg {
+        from { opacity: 0; }
+        to { opacity: 1; }
+    }
+    /* A translucent overlay for main content for readability */
+    .bg-translucent {
+        background: rgba(255,255,255,0.93);
+        border-radius: 16px;
+        box-shadow: 0 8px 32px rgba(23,91,152,0.09);
+        padding: 15px 18px 18px 18px;
+    }
+    /* Optional: Hero Section Overlay for better text contrast */
+    .hero-header {
+        position: relative;
+        overflow: hidden;
+    }
+    .hero-header::before {
+        content: "";
+        position: absolute;
+        z-index: 0;
+        left: 0; top: 0; width: 100%; height: 100%;
+        background: linear-gradient(120deg, #2124b1 80%, #175b98 100%);
+        opacity: 0.87;
+        pointer-events: none;
+    }
+    .hero-header > * {
+        position: relative;
+        z-index: 1;
+    }
+    /* Optional: Subtle fade up for containers */
+    .container.py-5 {
+        animation: fadeUp 1.08s cubic-bezier(.4,0,.2,1);
+    }
+    @keyframes fadeUp {
+        from { opacity: 0; transform: translateY(40px);}
+        to { opacity: 1; transform: none; }
+    }
+</style>
+
+    
+</head>
+
+<body>
+    <a href="javascript:history.back()" 
+   class="btn btn-outline-primary rounded-circle" 
+   style="position: fixed; top: 20px; left: 20px; z-index: 9999; width: 42px; height: 42px; display:flex; align-items:center; justify-content:center;">
+    <i class="fa fa-arrow-left"></i>
+</a>
+    <div class="-xxl bg-white p-0">
+        <!-- Spinner Start -->
+        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-grow text-primary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+        <!-- Spinner End -->
+
+
+        <!-- Navbar & Hero Start -->
+        <div class="-xxl position-relative p-0">
+            <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
+                <a href="index.html" class="navbar-brand p-0">
+                    <img src="img/newlogo.jpg" alt="Logo"> 
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="fa fa-bars"></span>
+                </button>
+                  <div class="collapse navbar-collapse" id="navbarCollapse">
+    <div class="navbar-nav ms-auto py-0">
+        <a href="index.html" class="nav-item nav-link">Home</a>
+        <a href="about.html" class="nav-item nav-link">About</a>
+        <a href="service.html" class="nav-item nav-link">IT Service</a>
+        <div class="nav-item dropdown">
+            <a href="#" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown">Services</a>
+            <div class="dropdown-menu m-0">
+                <div class="dropdown-submenu">
+                    <a href="#" class="dropdown-item" data-bs-toggle="collapse" data-bs-target="#subMenu1">Recruitment and Staffing Outsourcing</a>
+                    <div class="collapse" id="subMenu1">
+                        <a href="ITstaffing.html" class="dropdown-item">IT Staffing</a>
+                        <a href="nonIT.html" class="dropdown-item">Non-IT Staffing</a>
+                        <a href="health.html" class="dropdown-item">Healthcare Staffing</a>
+                        <a href="manpower.html" class="dropdown-item active">Virtual Employment</a>
+                    </div>
+                </div>
+                <div class="dropdown-submenu">
+                    <a href="#" class="dropdown-item" data-bs-toggle="collapse" data-bs-target="#subMenu2">Outsourcing</a>
+                    <div class="collapse" id="subMenu2">
+                        <a href="virtual.html" class="dropdown-item">Virtual Employement</a>
+                        <a href="thirdparty.html" class="dropdown-item">Third Party Payroll Services</a>
+                        <a href="subservice6.html" class="dropdown-item">RPO Model</a>
+                    </div>
+                </div>
+                <a href="404.html" class="dropdown-item">Campus Placement</a>
+            </div>
+        </div>
+        <a href="contact.html" class="nav-item nav-link">Contact Us</a>
+    </div>
+    <button type="button" class="btn text-secondary ms-3" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fa fa-search"></i></button>
+    <a href="pro.html" class="btn btn-secondary text-light rounded-pill py-2 px-4 ms-3">Pro Version</a>
+</div>
+
+            </nav>
+
+            <div class="-xxl py-5 bg-primary hero-header mb-5">
+                <div class=" my-5 py-5 px-lg-5">
+                    <div class="row g-5 py-5">
+                        <div class="col-12 text-center">
+                            <h1 class="text-white animated zoomIn">Third-party Payroll Services</h1>
+                            <hr class="bg-white mx-auto mt-0" style="width: 90px;">
+                            <nav aria-label="breadcrumb">
+                                <ol class="breadcrumb justify-content-center">
+                                    <li class="breadcrumb-item"><a class="text-white" href="#">Home</a></li>
+                                    <li class="breadcrumb-item"><a class="text-white" href="#">Services</a></li>
+                                    <li class="breadcrumb-item text-white active" aria-current="page">Third-party Payroll Services</li>
+                                </ol>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Navbar & Hero End -->
+
+
+        <!-- Full Screen Search Start -->
+        <div class="modal fade" id="searchModal" tabindex="-1">
+            <div class="modal-dialog modal-fullscreen">
+                <div class="modal-content" style="background: rgba(29, 29, 39, 0.7);">
+                    <div class="modal-header border-0">
+                        <button type="button" class="btn bg-white btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body d-flex align-items-center justify-content-center">
+                        <div class="input-group" style="max-width: 600px;">
+                            <input type="text" class="form-control bg-transparent border-light p-3" placeholder="Type search keyword">
+                            <button class="btn btn-light px-4"><i class="bi bi-search"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Full Screen Search End -->
+
+       <!-- Mobile App IT Services Intro Start -->
+<div class="container py-5">
+    <!-- Section Title and Intro -->
+    <div class="section-title text-center mb-2 pb-2 position-relative">
+        <h2 class="fw-bold" style="color: #175b98; letter-spacing: 1px;">Third-party Payroll Services</h2>
+        <div style="height:4px; width:60px; background:#175b98; margin:0 auto; border-radius:2px;"></div>
+    </div>
+    <div class="row mb-4">
+        <div class="col-12">
+            <p style="font-size: 1.12rem; color: #466085; line-height:1.8;">
+              Third-party payroll services refer to the outsourcing of payroll processing and management to an external service provider. Instead of handling payroll functions internally, companies contract with a specialized payroll service provider to handle payroll-related tasks, including calculating employee wages, processing payroll, managing tax withholdings, and generating payroll reports. When considering third-party payroll services, businesses should evaluate providers based on their reputation, experience, technology capabilities, customer support, pricing structure, and ability to meet specific payroll requirements. It is important to establish clear service-level agreements (SLAs) and ensure that the provider aligns with the company's payroll needs and compliance obligations.
+<strong>Here are some key aspects of third-party payroll services:</strong>
+
+            </p>
+        </div>
+    </div>
+</div>
+<!-- After this, your different service boxes can start as before -->
+
+        
+        
+        <div class="container py-5">
+    
+    <div class="row justify-content-center g-4">
+        <!-- Employee Self-Service Portals -->
+        <div class="col-md-6 col-lg-3">
+            <div class="why-choose-box">
+                <i class="fas fa-globe"></i>
+                <h5>Employee Self-Service Portals</h5>
+                <p>Virtual employment outsourcing allows companies to hire global talent remotely, offering flexibility in working hours, access to diverse skill sets, and the ability to operate across multiple time zones efficiently.</p>
+            </div>
+        </div>
+        <!--Multi-Country Payroll Management-->
+        <div class="col-md-6 col-lg-3">
+            <div class="why-choose-box">
+                <i class="fas fa-globe-asia"></i>
+                <h5>Multi-Country Payroll Management</h5>
+                <p>For businesses with international teams, payroll providers offer global payroll solutions, managing multiple country-specific tax rules, currency conversions, and labor laws, ensuring unified payroll processing for distributed, cross-border workforces.</p>
+            </div>
+        </div>
+        <!-- Customizable Payroll Solutions -->
+        <div class="col-md-6 col-lg-3">
+            <div class="why-choose-box">
+                <i class="fas fa-cogs"></i>
+                <h5>Customizable Payroll Solutions</h5>
+                <p>Third-party providers offer customizable payroll services tailored to unique business needs, allowing companies to select features like multi-frequency payroll, bonuses, commissions, and complex benefits packages without internal HR overextension.</p>
+            </div>
+        </div>
+        <!--Leave and Attendance Integration -->
+        <div class="col-md-6 col-lg-3">
+            <div class="why-choose-box">
+                <i class="fas fa-calendar-check"></i>
+                <h5>Leave and Attendance Integration</h5>
+                <p>Payroll services often integrate attendance tracking and leave management, automating salary adjustments based on absenteeism, overtime, or shift changes, streamlining the entire workforce management and payroll calculation process.</p>
+            </div>
+        </div>
+        <!-- Overtime and Incentive Handling -->
+        <div class="col-md-6 col-lg-3">
+            <div class="why-choose-box">
+                <i class="fas fa-money-bill-wave"></i>
+                <h5>Overtime and Incentive Handling</h5>
+                <p>Payroll services efficiently manage overtime payments, shift differentials, and performance-based incentives, automating calculations based on company policies and ensuring employees receive fair compensation for extra efforts.</p>
+            </div>
+        </div>
+        <!-- Multi-Country Payroll Solutions -->
+        <div class="col-md-6 col-lg-3">
+            <div class="why-choose-box">
+                <i class="fas fa-globe-europe"></i>
+                <h5>Multi-Country Payroll Solutions</h5>
+                <p>Global payroll providers offer multi-country payroll management, handling diverse tax systems, currencies, and labor laws, helping multinational companies streamline payroll operations across different geographies from a single platform.</p>
+            </div>
+        </div>
+        <!-- Garnishment and Deduction Processing -->
+        <div class="col-md-6 col-lg-3">
+            <div class="why-choose-box">
+                <i class="fas fa-percentage"></i>
+                <h5>Garnishment and Deduction Processing</h5>
+                <p>Providers manage legally required garnishments, including court-ordered wage deductions like child support, tax levies, or loan repayments, ensuring proper documentation and timely payments to relevant authorities.</p>
+            </div>
+        </div>
+        <!-- Year-End Tax Preparation and Filing -->
+        <div class="col-md-6 col-lg-3">
+            <div class="why-choose-box">
+                <i class="fas fa-file-invoice-dollar"></i>
+                <h5>Year-End Tax Preparation and Filing</h5>
+                <p>Third-party payroll firms handle year-end tax form generation like W-2, 1099, or Form 16 (India), assist in final tax reconciliations, and ensure timely filings to avoid penalties or audit risks.</p>
+            </div>
+        </div>
+        <!-- Customizable Payroll Features -->
+        <div class="col-md-6 col-lg-3">
+            <div class="why-choose-box">
+                <i class="fas fa-sliders-h"></i>
+                <h5>Customizable Payroll Features</h5>
+                <p>Many payroll vendors offer flexible, customizable payroll features such as different pay cycles (weekly, bi-weekly), bonus calculations, off-cycle payments, and tailored reporting formats to suit various business requirements.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+        <!-- Footer Start -->
+        <div class="-fluid bg-primary text-light footer mt-3 pt-3 wow fadeIn" data-wow-delay="0.1s">
+            <div class=" py-3 px-lg-5">
+                <div class="row g-5">
+                    <div class="col-md-6 col-lg-3">
+                        <h5 class="text-white mb-4">Get In Touch</h5>
+                        <p><i class="fa fa-map-marker-alt me-3"></i>Sector-16, Noida, UP, India</p>
+                        <p><i class="fa fa-phone-alt me-3"></i>+91 - 9599863390</p>
+                        <p><i class="fa fa-envelope me-3"></i>@makevisionsouutsourcing.in</p>
+                        <div class="d-flex pt-2">
+                            <a class="btn btn-outline-light btn-social" href="https://freewebsitecode.com/"><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-outline-light btn-social" href="https://facebook.com/freewebsitecode/"><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-outline-light btn-social" href="https://youtube.com/freewebsitecode/"><i class="fab fa-youtube"></i></a>
+                            <a class="btn btn-outline-light btn-social" href="https://freewebsitecode.com/"><i class="fab fa-instagram"></i></a>
+                            <a class="btn btn-outline-light btn-social" href="https://freewebsitecode.com/"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <h5 class="text-white mb-4">Popular Link</h5>
+                        <a class="btn btn-link" href="about.html">About Us</a>
+                        <a class="btn btn-link" href="contact.html">Contact Us</a>
+                        <a class="btn btn-link" href="">Privacy Policy</a>
+                        <a class="btn btn-link" href="">Terms & Condition</a>
+                        <a class="btn btn-link" href="">Career</a>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <h5 class="text-white mb-4">Project Gallery</h5>
+                        <div class="row g-2">
+                            <div class="col-4">
+                                <img class="img-fluid" src="img/portfolio-21.jpg" alt="Image">
+                            </div>
+                            <div class="col-4">
+                                <img class="img-fluid" src="img/portfolio-22.jpg" alt="Image">
+                            </div>
+                            <div class="col-4">
+                                <img class="img-fluid" src="img/portfolio-23.jpg" alt="Image">
+                            </div>
+                            <div class="col-4">
+                                <img class="img-fluid" src="img/portfolio-24.jpg" alt="Image">
+                            </div>
+                            <div class="col-4">
+                                <img class="img-fluid" src="img/portfolio-25.jpg" alt="Image">
+                            </div>
+                            <div class="col-4">
+                                <img class="img-fluid" src="img/portfolio-26.jpg" alt="Image">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <h5 class="text-white mb-4">Newsletter</h5>
+                        <p>At Makevisionsoutsourcing, we hire detail-oriented people who strive to provide our clients with the best assistance on the planet.</p>
+                        <div class="position-relative w-100 mt-3" id="newsletter-box">
+    <input id="newsletter-email" class="form-control border-0 rounded-pill w-100 ps-4 pe-5" type="email" placeholder="Your Email" style="height: 48px;">
+    <button id="newsletter-btn" type="button" class="btn shadow-none position-absolute top-0 end-0 mt-1 me-2">
+        <i class="fa fa-paper-plane text-primary fs-4"></i>
+    </button>
+    <div id="newsletter-success" class="position-absolute top-50 start-50 translate-middle text-success fw-bold d-none" style="font-size:1.1rem;">
+        <i class="fa fa-check-circle me-2"></i>Sent successfully!
+    </div>
+</div>
+
+<script>
+document.getElementById('newsletter-btn').addEventListener('click', function() {
+    var emailInput = document.getElementById('newsletter-email');
+    var successMsg = document.getElementById('newsletter-success');
+    var email = emailInput.value.trim();
+    // Basic email validation
+    var re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if(re.test(email)) {
+        successMsg.classList.remove('d-none');
+        emailInput.value = '';
+        setTimeout(function() {
+            successMsg.classList.add('d-none');
+        }, 2500); // Hide after 2.5 seconds
+    } else {
+        emailInput.classList.add('is-invalid');
+        setTimeout(function() {
+            emailInput.classList.remove('is-invalid');
+        }, 1500);
+    }
+});
+</script>
+
+                    </div>
+                </div>
+            </div>
+            <div class=" px-lg-5">
+                <div class="copyright">
+                    <div class="row">
+                        <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                            &copy; <a class="border-bottom" href="https://www.linkedin.com/company/make-vision-outsourcing-pvt-ltd/posts/?feedView=all">2025 Make Visions Outsourcing</a>, All Right Reserved. 
+							
+							
+							Designed By <a class="border-bottom" href="https://www.linkedin.com/in/suman-kumar16">Suman Kumar</a>
+                        </div>
+                        <div class="col-md-6 text-center text-md-end">
+                            <div class="footer-menu">
+                                <a href="index.html">Home</a>
+                                <a href="">Cookies</a>
+                                <a href="">Help</a>
+                                <a href="">FQAs</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top pt-2"><i class="bi bi-arrow-up"></i></a>
+    </div>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
