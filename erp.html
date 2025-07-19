@@ -30,12 +30,60 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+
+    <style>
+    body {
+        /* Use your preferred image below, you can replace Unsplash link with 'img/bg-yourimage.jpg' */
+        background: linear-gradient(rgba(23,91,152,0.55), rgba(33,36,177,0.28)), 
+                    url('https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=1350&q=80') no-repeat center center fixed;
+        background-size: cover;
+        min-height: 100vh;
+        animation: fadeInBg 1.3s cubic-bezier(.4,0,.2,1);
+    }
+    @keyframes fadeInBg {
+        from { opacity: 0; }
+        to { opacity: 1; }
+    }
+    /* A translucent overlay for main content for readability */
+    .bg-translucent {
+        background: rgba(255,255,255,0.93);
+        border-radius: 16px;
+        box-shadow: 0 8px 32px rgba(23,91,152,0.09);
+        padding: 15px 18px 18px 18px;
+    }
+    /* Optional: Hero Section Overlay for better text contrast */
+    .hero-header {
+        position: relative;
+        overflow: hidden;
+    }
+    .hero-header::before {
+        content: "";
+        position: absolute;
+        z-index: 0;
+        left: 0; top: 0; width: 100%; height: 100%;
+        background: linear-gradient(120deg, #2124b1 80%, #175b98 100%);
+        opacity: 0.87;
+        pointer-events: none;
+    }
+    .hero-header > * {
+        position: relative;
+        z-index: 1;
+    }
+    /* Optional: Subtle fade up for containers */
+    .container.py-5 {
+        animation: fadeUp 1.08s cubic-bezier(.4,0,.2,1);
+    }
+    @keyframes fadeUp {
+        from { opacity: 0; transform: translateY(40px);}
+        to { opacity: 1; transform: none; }
+    }
+</style>
 </head>
 
 <body>
     <a href="javascript:history.back()" 
    class="btn btn-outline-primary rounded-circle" 
-   style="position: fixed; top: 20px; left: 20px; z-index: 9999; width: 42px; height: 42px; display:flex; align-items:center; justify-content:center;">
+   style="position: fixed; top: 10px; left: 8px; z-index: 9999; width: 36px; height: 36px; display:flex; align-items:center; justify-content:center;">
     <i class="fa fa-arrow-left"></i>
 </a>
     <div class="-xxl bg-white p-0">
@@ -64,9 +112,9 @@
         <a href="service.html" class="nav-item nav-link active">IT Service</a>
         <div class="nav-item dropdown">
             <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Services</a>
-            <div class="dropdown-menu m-0">
+           <div class="dropdown-menu m-0">
                 <div class="dropdown-submenu">
-                    <a href="#" class="dropdown-item" data-bs-toggle="collapse" data-bs-target="#subMenu1">Recruitment and Staffing Outsourcing</a>
+                    <a href="#" class="dropdown-item d-flex align-items-center justify-content-between" data-bs-toggle="collapse" data-bs-target="#subMenu1">Recruitment and Staffing Outsourcing <i class="bi bi-caret-down-fill ms-2"></i></a>
                     <div class="collapse" id="subMenu1">
                         <a href="ITstaffing.html" class="dropdown-item">IT Staffing</a>
                         <a href="nonIT.html" class="dropdown-item">Non-IT Staffing</a>
@@ -75,7 +123,7 @@
                     </div>
                 </div>
                 <div class="dropdown-submenu">
-                    <a href="#" class="dropdown-item" data-bs-toggle="collapse" data-bs-target="#subMenu2">Outsourcing</a>
+                    <a href="#" class="dropdown-item d-flex align-items-center justify-content-between" data-bs-toggle="collapse" data-bs-target="#subMenu2">Outsourcing <i class="bi bi-caret-down-fill ms-2"></i></a>
                     <div class="collapse" id="subMenu2">
                         <a href="virtual.html" class="dropdown-item">Virtual Employement</a>
                         <a href="thirdparty.html" class="dropdown-item">Third Party Payroll Services</a>
@@ -97,7 +145,7 @@
                 <div class=" my-5 py-5 px-lg-5">
                     <div class="row g-5 py-5">
                         <div class="col-12 text-center">
-                            <h1 class="text-white animated zoomIn">Web App Development</h1>
+                            <h1 class="text-white animated zoomIn">ERP (Enterprise Resource Planning)</h1>
                             <hr class="bg-white mx-auto mt-0" style="width: 90px;">
                             <nav aria-label="breadcrumb">
                                 <ol class="breadcrumb justify-content-center">
